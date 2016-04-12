@@ -103,22 +103,10 @@ Number of work/free reflections by resolution:
       Number of atoms: 18
       Number of conformers: 1
       Conformer: ""
-        Number of residues, atoms: 6, 0
-          Unknown residues: {'TIP': 6}
-          Chain breaks: 6
-  Number of atoms with unknown nonbonded energy type symbols: 18
-    "ATOM    329  OH2 TIP W   1 .*.WATA O  "
-    "ATOM    330  H1  TIP W   1 .*.WATA H  "
-    "ATOM    331  H2  TIP W   1 .*.WATA H  "
-    "ATOM    332  OH2 TIP W   2 .*.WATA O  "
-    "ATOM    333  H1  TIP W   2 .*.WATA H  "
-    "ATOM    334  H2  TIP W   2 .*.WATA H  "
-    "ATOM    335  OH2 TIP W   3 .*.WATA O  "
-    "ATOM    336  H1  TIP W   3 .*.WATA H  "
-    "ATOM    337  H2  TIP W   3 .*.WATA H  "
-    "ATOM    338  OH2 TIP W   4 .*.WATA O  "
-    ... (remaining 8 not shown)
-  Time building chain proxies: 0.13, per 1000 atoms: 0.38
+        Number of residues, atoms: 6, 18
+          Classifications: {'water': 6}
+          Link IDs: {None: 5}
+  Time building chain proxies: 0.12, per 1000 atoms: 0.35
   Number of scatterers: 346
   At special positions: 0
   Unit cell: (25.862, 9.699, 15.851, 77.18, 74.69, 86.93)
@@ -146,7 +134,7 @@ Number of work/free reflections by resolution:
       
   Number of custom bonds: simple=0, symmetry=0
   Time building additional restraints: 0.10
-  Conformation dependent library (CDL) restraints added in 11.0 milliseconds
+  Conformation dependent library (CDL) restraints added in 8.3 milliseconds
   
   Adding C-beta torsion restraints...
   Number of C-beta restraints generated:  32
@@ -156,12 +144,12 @@ Number of work/free reflections by resolution:
         output of .geo file.
 
   Histogram of bond lengths:
-        1.00 -     1.16: 176
-        1.16 -     1.32: 28
-        1.32 -     1.48: 40
-        1.48 -     1.64: 72
-        1.64 -     1.80: 8
-  Bond restraints: 324
+        0.96 -     1.13: 188
+        1.13 -     1.29: 28
+        1.29 -     1.46: 32
+        1.46 -     1.63: 80
+        1.63 -     1.80: 8
+  Bond restraints: 336
   Sorted by residual:
   bond pdb=" N   MET B   1 " segid="PROB"
        pdb=" HT2 MET B   1 " segid="PROB"
@@ -183,15 +171,15 @@ Number of work/free reflections by resolution:
        pdb=" HT2 MET C   1 " segid="PROC"
     ideal  model  delta    sigma   weight residual
     0.890  1.040 -0.150 2.00e-02 2.50e+03 5.64e+01
-  ... (remaining 319 not shown)
+  ... (remaining 331 not shown)
 
   Histogram of bond angle deviations from ideal:
-       99.32 -   104.53: 4
-      104.53 -   109.74: 266
+       99.32 -   104.53: 7
+      104.53 -   109.74: 269
       109.74 -   114.96: 190
       114.96 -   120.17: 55
       120.17 -   125.39: 77
-  Bond angle restraints: 592
+  Bond angle restraints: 598
   Sorted by residual:
   angle pdb=" N   GLY B   4 " segid="PROB"
         pdb=" CA  GLY B   4 " segid="PROB"
@@ -203,9 +191,9 @@ Number of work/free reflections by resolution:
         pdb=" C   GLY A   3 " segid="PROA"
       ideal   model   delta    sigma   weight residual
      110.91  115.01   -4.10 1.49e+00 4.50e-01 7.59e+00
-  angle pdb=" CB  VAL B   2 " segid="PROB"
+  angle pdb=" C   VAL B   2 " segid="PROB"
         pdb=" CA  VAL B   2 " segid="PROB"
-        pdb=" C   VAL B   2 " segid="PROB"
+        pdb=" CB  VAL B   2 " segid="PROB"
       ideal   model   delta    sigma   weight residual
      110.71  106.34    4.37 1.73e+00 3.34e-01 6.38e+00
   angle pdb=" N   VAL A   5 " segid="PROA"
@@ -213,12 +201,12 @@ Number of work/free reflections by resolution:
         pdb=" C   VAL A   5 " segid="PROA"
       ideal   model   delta    sigma   weight residual
      107.77  111.24   -3.47 1.48e+00 4.57e-01 5.50e+00
-  angle pdb=" CB  VAL B   5 " segid="PROB"
+  angle pdb=" C   VAL B   5 " segid="PROB"
         pdb=" CA  VAL B   5 " segid="PROB"
-        pdb=" C   VAL B   5 " segid="PROB"
+        pdb=" CB  VAL B   5 " segid="PROB"
       ideal   model   delta    sigma   weight residual
      110.28  106.59    3.69 1.58e+00 4.01e-01 5.46e+00
-  ... (remaining 587 not shown)
+  ... (remaining 593 not shown)
 
   Histogram of dihedral angle deviations from ideal:
         0.07 -    16.14: 71
@@ -260,22 +248,22 @@ Number of work/free reflections by resolution:
   Sorted by residual:
   chirality pdb=" CA  VAL D   5 " segid="PROD"
             pdb=" N   VAL D   5 " segid="PROD"
-            pdb=" CB  VAL D   5 " segid="PROD"
             pdb=" C   VAL D   5 " segid="PROD"
+            pdb=" CB  VAL D   5 " segid="PROD"
     both_signs  ideal   model   delta    sigma   weight residual
-      False     -2.44   -2.71    0.27 2.00e-01 2.50e+01 1.79e+00
+      False      2.44    2.71   -0.27 2.00e-01 2.50e+01 1.79e+00
   chirality pdb=" CA  VAL B   2 " segid="PROB"
             pdb=" N   VAL B   2 " segid="PROB"
-            pdb=" CB  VAL B   2 " segid="PROB"
             pdb=" C   VAL B   2 " segid="PROB"
+            pdb=" CB  VAL B   2 " segid="PROB"
     both_signs  ideal   model   delta    sigma   weight residual
-      False     -2.44   -2.70    0.26 2.00e-01 2.50e+01 1.64e+00
+      False      2.44    2.70   -0.26 2.00e-01 2.50e+01 1.64e+00
   chirality pdb=" CA  VAL C   5 " segid="PROC"
             pdb=" N   VAL C   5 " segid="PROC"
-            pdb=" CB  VAL C   5 " segid="PROC"
             pdb=" C   VAL C   5 " segid="PROC"
+            pdb=" CB  VAL C   5 " segid="PROC"
     both_signs  ideal   model   delta    sigma   weight residual
-      False     -2.44   -2.68    0.24 2.00e-01 2.50e+01 1.46e+00
+      False      2.44    2.68   -0.24 2.00e-01 2.50e+01 1.46e+00
   ... (remaining 25 not shown)
 
   Planarity restraints: 44
@@ -298,35 +286,34 @@ Number of work/free reflections by resolution:
   ... (remaining 41 not shown)
 
   Histogram of nonbonded interaction distances:
-        0.96 -     1.75: 30
-        1.75 -     2.53: 349
-        2.53 -     3.32: 1393
-        3.32 -     4.11: 2342
-        4.11 -     4.90: 4148
-  Warning: very small nonbonded interaction distances.
-  Nonbonded interactions: 8262
+        1.40 -     2.10: 52
+        2.10 -     2.80: 755
+        2.80 -     3.50: 1361
+        3.50 -     4.20: 2262
+        4.20 -     4.90: 3814
+  Nonbonded interactions: 8244
   Sorted by model distance:
-  nonbonded pdb=" OH2 TIP W   4 " segid="WATA"
-            pdb=" H1  TIP W   4 " segid="WATA"
+  nonbonded pdb="HG21 VAL C   6 " segid="PROC"
+            pdb="HG23 VAL D   6 " segid="PROD"
+     model   vdw sym.op.
+     1.405 2.440 x,y-1,z+1
+  nonbonded pdb=" HT1 MET B   1 " segid="PROB"
+            pdb=" H1  HOH W   6 " segid="WATA"
+     model   vdw sym.op.
+     1.433 2.100 x,y-1,z+1
+  nonbonded pdb="HG11 VAL C   5 " segid="PROC"
+            pdb="HG22 VAL D   2 " segid="PROD"
+     model   vdw sym.op.
+     1.455 2.440 x,y-1,z
+  nonbonded pdb=" HE2 MET A   1 " segid="PROA"
+            pdb="HG12 VAL C   6 " segid="PROC"
+     model   vdw sym.op.
+     1.517 2.440 x-1,y+1,z-1
+  nonbonded pdb=" H2  HOH W   4 " segid="WATA"
+            pdb=" O   HOH W   5 " segid="WATA"
      model   vdw
-     0.957 1.000
-  nonbonded pdb=" OH2 TIP W   6 " segid="WATA"
-            pdb=" H2  TIP W   6 " segid="WATA"
-     model   vdw
-     0.957 1.000
-  nonbonded pdb=" OH2 TIP W   5 " segid="WATA"
-            pdb=" H1  TIP W   5 " segid="WATA"
-     model   vdw
-     0.957 1.000
-  nonbonded pdb=" OH2 TIP W   5 " segid="WATA"
-            pdb=" H2  TIP W   5 " segid="WATA"
-     model   vdw
-     0.957 1.000
-  nonbonded pdb=" OH2 TIP W   1 " segid="WATA"
-            pdb=" H1  TIP W   1 " segid="WATA"
-     model   vdw
-     0.957 1.000
-  ... (remaining 8257 not shown)
+     1.524 1.970
+  ... (remaining 8239 not shown)
 
   NOTE: a complete listing of the restraints can be obtained by requesting
         output of .geo file.
@@ -347,24 +334,23 @@ Unit cell: (25.862, 9.699, 15.851, 77.18, 74.69, 86.93)
 Space group: P 1 (No. 1)
 
 End of input processing
-r_work=0.3535 r_free=0.3549
+r_work=0.4888 r_free=0.5710
 params.data_weight: None
 params.restraints: cctbx
-rmsd(b), start:  0.0158
+rmsd(b), start:  0.0156
 Initial weight optimization counter: 1
 Initial weight optimization counter: 2
-Initial weight optimization counter: 3
-initial_restraints_weight_scale 16.0
-mc:   0 Rw: 0.2593 Rf: 0.3244 rmsd(b):  0.0198 restraint_scale: 16.0 min_steps: 53
-mc:   1 Rw: 0.2446 Rf: 0.3381 rmsd(b):  0.0231 restraint_scale: 16.0 min_steps: 52
-mc:   2 Rw: 0.2488 Rf: 0.3473 rmsd(b):  0.0257 restraint_scale: 16.0 min_steps: 22
-mc:   3 Rw: 0.2570 Rf: 0.3633 rmsd(b):  0.0291 restraint_scale: 16.0 min_steps: 59
-mc:   4 Rw: 0.2646 Rf: 0.3635 rmsd(b):  0.0302 restraint_scale: 32.0 min_steps: 24
-mc:   5 Rw: 0.2748 Rf: 0.3584 rmsd(b):  0.0171 restraint_scale: 32.0 min_steps: 41
-mc:   6 Rw: 0.2745 Rf: 0.3583 rmsd(b):  0.0164 restraint_scale: 32.0 min_steps: 5
+initial_restraints_weight_scale 32.0
+mc:   0 Rw: 0.4839 Rf: 0.6000 rmsd(b):  0.0136 restraint_scale: 32.0 min_steps: 53
+mc:   1 Rw: 0.4795 Rf: 0.6046 rmsd(b):  0.0150 restraint_scale: 32.0 min_steps: 52
+mc:   2 Rw: 0.4717 Rf: 0.5951 rmsd(b):  0.0127 restraint_scale: 32.0 min_steps: 53
+mc:   3 Rw: 0.4780 Rf: 0.6008 rmsd(b):  0.0144 restraint_scale: 32.0 min_steps: 46
+mc:   4 Rw: 0.4763 Rf: 0.5988 rmsd(b):  0.0148 restraint_scale: 32.0 min_steps: 13
+mc:   5 Rw: 0.4741 Rf: 0.5958 rmsd(b):  0.0132 restraint_scale: 32.0 min_steps: 31
+mc:   6 Rw: 0.4749 Rf: 0.5965 rmsd(b):  0.0143 restraint_scale: 32.0 min_steps: 9
 Convergence reached, stop now.
  r_factor (best): None
  take the last structure
- r_factor (last): 0.27448
+ r_factor (last): 0.47488
 see the result structure:  ./pdb/2ona_cctbx_refine.pdb
-Time: 13.0432
+Time: 11.5568

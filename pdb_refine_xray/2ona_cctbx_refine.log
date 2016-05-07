@@ -106,7 +106,7 @@ Number of work/free reflections by resolution:
         Number of residues, atoms: 6, 18
           Classifications: {'water': 6}
           Link IDs: {None: 5}
-  Time building chain proxies: 0.12, per 1000 atoms: 0.35
+  Time building chain proxies: 0.14, per 1000 atoms: 0.40
   Number of scatterers: 346
   At special positions: 0
   Unit cell: (25.862, 9.699, 15.851, 77.18, 74.69, 86.93)
@@ -133,12 +133,12 @@ Number of work/free reflections by resolution:
         Amino acid - RNA/DNA : False
       
   Number of custom bonds: simple=0, symmetry=0
-  Time building additional restraints: 0.10
-  Conformation dependent library (CDL) restraints added in 8.3 milliseconds
+  Time building additional restraints: 0.12
+  Conformation dependent library (CDL) restraints added in 10.2 milliseconds
   
   Adding C-beta torsion restraints...
   Number of C-beta restraints generated:  32
-  Time building geometry restraints manager: 0.11 seconds
+  Time building geometry restraints manager: 0.13 seconds
 
   NOTE: a complete listing of the restraints can be obtained by requesting
         output of .geo file.
@@ -334,23 +334,34 @@ Unit cell: (25.862, 9.699, 15.851, 77.18, 74.69, 86.93)
 Space group: P 1 (No. 1)
 
 End of input processing
-r_work=0.4888 r_free=0.5710
+Total model structure factor:
+  F_model = k_total * (F_calc + k_mask * F_mask)
+
+    k_total = k_isotropic * k_anisotropic
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 14.581-3.151    41.67    89    11 0.2060    45.669    44.381 1.000 1.095 0.160
+  3.150-2.557    44.44    87    13 0.3070    24.684    24.354 1.000 1.033 0.080
+  2.556-2.029    43.78   184    20 0.2491    21.136    20.322 1.000 1.069 0.081
+
+r_work=0.2441 r_free=0.2690
 params.data_weight: None
 params.restraints: cctbx
 rmsd(b), start:  0.0156
 Initial weight optimization counter: 1
 Initial weight optimization counter: 2
-initial_restraints_weight_scale 32.0
-mc:   0 Rw: 0.4839 Rf: 0.6000 rmsd(b):  0.0136 restraint_scale: 32.0 min_steps: 53
-mc:   1 Rw: 0.4795 Rf: 0.6046 rmsd(b):  0.0150 restraint_scale: 32.0 min_steps: 52
-mc:   2 Rw: 0.4717 Rf: 0.5951 rmsd(b):  0.0127 restraint_scale: 32.0 min_steps: 53
-mc:   3 Rw: 0.4780 Rf: 0.6008 rmsd(b):  0.0144 restraint_scale: 32.0 min_steps: 46
-mc:   4 Rw: 0.4763 Rf: 0.5988 rmsd(b):  0.0148 restraint_scale: 32.0 min_steps: 13
-mc:   5 Rw: 0.4741 Rf: 0.5958 rmsd(b):  0.0132 restraint_scale: 32.0 min_steps: 31
-mc:   6 Rw: 0.4749 Rf: 0.5965 rmsd(b):  0.0143 restraint_scale: 32.0 min_steps: 9
+Initial weight optimization counter: 3
+Initial weight optimization counter: 4
+initial_restraints_weight_scale 8.0
+mc:   0 Rw: 0.1718 Rf: 0.2704 rmsd(b):  0.0221 restraint_scale: 16.0 min_steps: 52
+mc:   1 Rw: 0.1884 Rf: 0.3031 rmsd(b):  0.0188 restraint_scale: 32.0 min_steps: 53
+mc:   2 Rw: 0.1999 Rf: 0.2862 rmsd(b):  0.0104 restraint_scale: 64.0 min_steps: 52
+mc:   3 Rw: 0.2032 Rf: 0.2874 rmsd(b):  0.0062 restraint_scale: 64.0 min_steps: 30
+mc:   4 Rw: 0.2048 Rf: 0.2827 rmsd(b):  0.0057 restraint_scale: 64.0 min_steps: 55
+mc:   5 Rw: 0.2001 Rf: 0.2818 rmsd(b):  0.0065 restraint_scale: 64.0 min_steps: 37
+mc:   6 Rw: 0.2023 Rf: 0.2818 rmsd(b):  0.0052 restraint_scale: 64.0 min_steps: 16
+mc:   7 Rw: 0.2011 Rf: 0.2809 rmsd(b):  0.0060 restraint_scale: 64.0 min_steps: 10
+mc:   8 Rw: 0.2011 Rf: 0.2809 rmsd(b):  0.0060 restraint_scale: 64.0 min_steps: 1
 Convergence reached, stop now.
- r_factor (best): None
- take the last structure
- r_factor (last): 0.47488
+Best r_work: 0.2441 r_free: 0.2690
 see the result structure:  ./pdb/2ona_cctbx_refine.pdb
-Time: 11.5568
+Time: 16.2436

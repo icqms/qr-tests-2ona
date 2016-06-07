@@ -1,5 +1,4 @@
 
-
 ============================== Collecting inputs ==============================
 
 
@@ -133,12 +132,12 @@ Number of work/free reflections by resolution:
         Amino acid - RNA/DNA : False
       
   Number of custom bonds: simple=0, symmetry=0
-  Time building additional restraints: 0.12
-  Conformation dependent library (CDL) restraints added in 12.4 milliseconds
+  Time building additional restraints: 0.13
+  Conformation dependent library (CDL) restraints added in 11.4 milliseconds
   
   Adding C-beta torsion restraints...
   Number of C-beta restraints generated:  32
-  Time building geometry restraints manager: 0.13 seconds
+  Time building geometry restraints manager: 0.15 seconds
 
   NOTE: a complete listing of the restraints can be obtained by requesting
         output of .geo file.
@@ -339,38 +338,30 @@ Total model structure factor:
 
     k_total = k_isotropic * k_anisotropic
    Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
- 14.581-3.151    41.67    89    11 0.2060    45.669    44.381 1.000 1.095 0.160
-  3.150-2.557    44.44    87    13 0.3070    24.684    24.354 1.000 1.033 0.080
-  2.556-2.029    43.78   184    20 0.2491    21.136    20.322 1.000 1.069 0.081
+ 14.581-3.195    43.67    91     9 0.1772    51.988    51.928 1.000 1.109 0.233
+  3.187-2.574    43.86    85    15 0.2876    27.174    25.670 1.000 0.988 0.072
+  2.572-2.029    44.21   189    21 0.2542    20.892    19.838 1.000 1.036 0.072
 
-r_work=0.2441 r_free=0.2690
+r_work=0.2288 r_free=0.2742
 params.data_weight: None
 params.restraints: qm
 rmsd(b), start:  0.0156
-Initial weight optimization counter: 1
-Initial weight optimization counter: 2
-Initial weight optimization counter: 3
-Initial weight optimization counter: 4
-Initial weight optimization counter: 5
+Initial weight optimization counter: 1 8
+Initial weight optimization counter: 2 4.0
+Initial weight optimization counter: 3 2.0
 initial_restraints_weight_scale 4.0
-mc:   0 Rw: 0.1568 Rf: 0.2576 rmsd(b):  0.0349 restraint_scale:  8.0 min_steps: 51
-mc:   1 Rw: 0.1797 Rf: 0.2610 rmsd(b):  0.0353 restraint_scale: 16.0 min_steps: 52
-mc:   2 Rw: 0.1782 Rf: 0.2559 rmsd(b):  0.0215 restraint_scale: 32.0 min_steps: 52
-mc:   3 Rw: 0.1812 Rf: 0.2547 rmsd(b):  0.0183 restraint_scale: 64.0 min_steps: 36
-mc:   4 Rw: 0.1992 Rf: 0.2621 rmsd(b):  0.0173 restraint_scale: 128.0 min_steps: 48
-mc:   5 Rw: 0.2475 Rf: 0.3176 rmsd(b):  0.0172 restraint_scale: 256.0 min_steps: 52
-mc:   6 Rw: 0.2873 Rf: 0.3352 rmsd(b):  0.0175 restraint_scale: 256.0 min_steps: 52
-mc:   7 Rw: 0.2832 Rf: 0.3363 rmsd(b):  0.0174 restraint_scale: 512.0 min_steps: 52
-mc:   8 Rw: 0.3156 Rf: 0.3394 rmsd(b):  0.0180 restraint_scale: 512.0 min_steps: 52
-mc:   9 Rw: 0.3230 Rf: 0.3325 rmsd(b):  0.0174 restraint_scale: 512.0 min_steps: 52
-mc:  10 Rw: 0.3251 Rf: 0.3266 rmsd(b):  0.0179 restraint_scale: 512.0 min_steps: 52
-mc:  11 Rw: 0.3155 Rf: 0.3154 rmsd(b):  0.0178 restraint_scale: 512.0 min_steps: 52
-mc:  12 Rw: 0.3348 Rf: 0.3256 rmsd(b):  0.0180 restraint_scale: 512.0 min_steps: 52
-mc:  13 Rw: 0.3281 Rf: 0.3305 rmsd(b):  0.0179 restraint_scale: 512.0 min_steps: 54
-mc:  14 Rw: 0.3431 Rf: 0.3372 rmsd(b):  0.0179 restraint_scale: 512.0 min_steps: 52
-mc:  15 Rw: 0.3357 Rf: 0.3405 rmsd(b):  0.0180 restraint_scale: 512.0 min_steps: 52
-mc:  16 Rw: 0.3358 Rf: 0.3405 rmsd(b):  0.0179 restraint_scale: 512.0 min_steps: 10
+mc:   0 Rw: 0.1696 Rf: 0.2748 rmsd(b):  0.0296 restraint_scale:  8.0 min_steps: 51
+mc:   1 Rw: 0.1744 Rf: 0.2986 rmsd(b):  0.0235 restraint_scale: 16.0 min_steps: 52
+mc:   2 Rw: 0.1983 Rf: 0.3213 rmsd(b):  0.0199 restraint_scale: 32.0 min_steps: 52
+mc:   3 Rw: 0.2105 Rf: 0.3065 rmsd(b):  0.0182 restraint_scale: 64.0 min_steps: 27
+mc:   4 Rw: 0.2256 Rf: 0.2809 rmsd(b):  0.0174 restraint_scale: 128.0 min_steps: 52
+mc:   5 Rw: 0.2449 Rf: 0.3020 rmsd(b):  0.0176 restraint_scale: 256.0 min_steps: 52
+mc:   6 Rw: 0.2939 Rf: 0.3007 rmsd(b):  0.0179 restraint_scale: 256.0 min_steps: 52
+mc:   7 Rw: 0.2780 Rf: 0.3234 rmsd(b):  0.0174 restraint_scale: 256.0 min_steps: 52
+mc:   8 Rw: 0.2842 Rf: 0.3202 rmsd(b):  0.0181 restraint_scale: 256.0 min_steps: 53
+mc:   9 Rw: 0.2768 Rf: 0.3254 rmsd(b):  0.0178 restraint_scale: 256.0 min_steps: 53
+mc:  10 Rw: 0.2768 Rf: 0.3254 rmsd(b):  0.0178 restraint_scale: 256.0 min_steps: 1
 Convergence reached, stop now.
-Best r_work: 0.1812 r_free: 0.2547
+Best r_work: 0.1696 r_free: 0.2748
 see the result structure:  ./pdb/2ona_qm_refine.pdb
-Time: 152275.5437
+Time: 94838.3946

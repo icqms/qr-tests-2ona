@@ -105,7 +105,7 @@ Number of work/free reflections by resolution:
         Number of residues, atoms: 6, 18
           Classifications: {'water': 6}
           Link IDs: {None: 5}
-  Time building chain proxies: 0.12, per 1000 atoms: 0.35
+  Time building chain proxies: 0.14, per 1000 atoms: 0.40
   Number of scatterers: 346
   At special positions: 0
   Unit cell: (25.862, 9.699, 15.851, 77.18, 74.69, 86.93)
@@ -346,18 +346,16 @@ r_work=0.2288 r_free=0.2742
 params.data_weight: None
 params.restraints: cctbx
 rmsd(b), start:  0.0156
-Initial weight optimization counter: 1 8
-Initial weight optimization counter: 2 4.0
+Initial weight optimization counter: 1 8 0.0211627861428
+Initial weight optimization counter: 2 4.0 0.031409824567
 initial_restraints_weight_scale 8.0
-mc:   0 Rw: 0.1665 Rf: 0.2664 rmsd(b):  0.0213 restraint_scale: 16.0 min_steps: 52
-mc:   1 Rw: 0.1749 Rf: 0.2834 rmsd(b):  0.0177 restraint_scale: 32.0 min_steps: 52
-mc:   2 Rw: 0.1916 Rf: 0.2845 rmsd(b):  0.0093 restraint_scale: 32.0 min_steps: 53
-mc:   3 Rw: 0.1876 Rf: 0.2936 rmsd(b):  0.0103 restraint_scale: 64.0 min_steps: 31
-mc:   4 Rw: 0.1982 Rf: 0.2870 rmsd(b):  0.0065 restraint_scale: 64.0 min_steps: 52
-mc:   5 Rw: 0.1999 Rf: 0.2887 rmsd(b):  0.0057 restraint_scale: 64.0 min_steps: 33
-mc:   6 Rw: 0.1984 Rf: 0.2897 rmsd(b):  0.0056 restraint_scale: 64.0 min_steps: 35
-mc:   7 Rw: 0.1983 Rf: 0.2896 rmsd(b):  0.0057 restraint_scale: 64.0 min_steps: 3
-Convergence reached, stop now.
-Best r_work: 0.1665 r_free: 0.2664
+  Convergence reached at i: 4
+mc:   0 Rw: 0.1838 Rf: 0.2886 rmsd(b):  0.0260 restraint_scale: 16.0 min_steps: 5
+  Convergence reached at i: 5
+mc:   1 Rw: 0.1900 Rf: 0.2691 rmsd(b):  0.0160 restraint_scale: 32.0 min_steps: 13
+  Convergence reached at i: 5
+mc:   2 Rw: 0.1960 Rf: 0.3031 rmsd(b):  0.0083 restraint_scale: 32.0 min_steps: 9
+ Convergence at macro_cycle: 2
+Best r_work: 0.1900 r_free: 0.2691
 see the result structure:  ./pdb/2ona_cctbx_refine.pdb
-Time: 12.9910
+Time: 13.6439
